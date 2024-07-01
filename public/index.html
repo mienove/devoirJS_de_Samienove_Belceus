@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/style.css">
+    <script src="https://kit.fontawesome.com/800d6e5b9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Lendor | Accueil</title>
+    
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <h1><i class="fa-solid fa-crown"></i><a href="./index.html"> Lendor</a></h1>
+            
+            <ul>
+                <li class="mobile-style"><a href="index.html">Accueil</a></li>
+                <li class="mobile-style"><a href="offre.html">Nos offres</a></li>
+                <li class="mobile-style"><a href="equipe.html">Notre equipe</a></li>
+                <li class="mobile-style"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="content">
+        <div class="content-vp">
+            <h2>Un <span id="span-01" style="color: orange;">immobilier</span> d'exception
+                <br>pour des clients d'exception 
+            </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate placeat facere quo nemo officiis fugiat, ab commodi, 
+                accusamus quia voluptatum quae assumenda ipsum voluptatibus iste vitae. 
+                Laborum, quibusdam doloribus.</p>
+        </div>
+    </section>
+    <section>
+        <h3 class="titre">Nos dernieres acquisitions</h3>
+        <div id="container">
+            <div class="feature-1">
+                <img src="./Images/1000_F_648333568_pPIAHZXgK18uh0Bexsqnza7f9TBDLvPF.jpg" alt="chambre">
+                <p>
+                    Appartement-Paris 75007<br>
+                    11 Chambres 450 m2<br> _______<br>
+                    3 900 000€ - $4 200 000 
+                </p>
+            </div>
+            <div class="feature-1">
+                <img src="./Images/istockphoto-1147674297-612x612.jpg" alt="">
+                <p>
+                    Appartement-Paris 75001 <br> 
+                    5 Chambres 233 m2<br> ________ <br>3 900 000€ - $4 200 000  
+                </p>
+            </div>
+            <div class="feature-1">
+                <img src="./Images/istockphoto-1396856251-612x612.jpg" alt="">
+                <p>
+                    Appartement-Paris 75001 <br> 
+                    5 Chambres 233 m2<br> _______ <br>3 900 000€ - $4 200 000  
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="notre-equipe">
+        <div class="image_equipe">
+            <img src="./Images/gens-plan-moyen-travaillant-ensemble_23-2149636258.jpg"  alt="">
+        </div>
+        <div class="equipe-text">
+            <h2>Une equipe de <span id="dcolor" style="color: orange">
+                professionnels</span> avec plus de 10 ans d'experience</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Exercitationem ut, labore placeat iure facilis accusamus, officia architecto voluptatum asperiores quisquam blanditiis 
+                rerum dolorum beatae possimus reiciendis magni natus deleniti quaerat.
+            </p>
+        </div>   
+    </section>
+    
+    <div id="commentsSection">
+        <!-- Les 10 derniers commentaires seront affichés ici -->
+    </div>
+
+    <section class="section-comment">
+        <h1>BLOG</h1>
+        <div>
+            
+            <form id="commentForm" class="commentForm" action="/comments">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" placeholder="votre nom" required>
+                <label for="commentText">Commentaire:</label>
+                <textarea id="commentText" name="commentText" placeholder="Écrivez votre commentaire ici..." required></textarea>
+                <button type="submit">Afficher le commentaire</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright @ 2024 Dyma, Inc</p>
+    </footer>
+    <script src="/js/script.js"></script>
+
+</body>
+</html>

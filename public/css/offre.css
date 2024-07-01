@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #e6dddd;
+}
+body nav{
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    font-weight: 1.7em;
+    overflow: auto;
+}
+.header nav h1{
+    float: left;
+    padding: 20px;
+    margin-bottom: 0px;
+    
+    font-family: indie flower;
+}
+.header nav ul{
+    float: right;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: rgb(249, 249, 252);
+}
+.header nav ul li{
+   display: inline;
+   float: left;
+   padding: 20px;
+}
+.header nav ul li a:hover{
+    padding: 15px;
+    background:#7e8dce;
+
+}
+.content{
+    width: 100%;
+    height: 500px;
+    background-image: url(../Images/1000_F_757086965_VocWpIwMBSWZczFmXer1kC65cqFd7LDQ.jpg);
+    margin-top: 0px;
+    text-align: center;
+    
+}
+.content-vp{
+    margin:auto;
+    max-width: 600px;
+    padding-top: 150px;
+    color: rgb(255, 255, 255);
+}
+.content-vp h2{
+    font-size: 30px;
+}
+.content-vp p{
+    font-size: 15px;
+    line-height: 1.7em;
+    font-family: Nanum Myeongjo;
+}
+.fa-crown{
+    color: orange;
+}
+#container{
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 20px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5px;
+
+}
+.container1{
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 20px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0px;
+}
+#container img{
+    width: 100%;
+    height: 260px;
+    float: left;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.container1 img{
+    width: 100%;
+    height: 260px;
+    float: left;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.titre{
+    padding-left:70px;
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin-top: 4vw;
+}
+.feature-1{
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 60%;
+    background-color: rgb(250, 246, 246);
+}
+footer{
+    text-align: center;
+    background: #333;
+    height: 60px;
+    width: 100%;
+    padding: 20px 0px;
+    font-family: "Nanum Myeongjo";
+}
+footer p{
+    margin-bottom: 5px;
+    color: #fff;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .content-vp h2 {
+        font-size: 25px;
+    }
+    .content-vp p {
+        font-size: 14px;
+    }
+    #container, .container1 {
+        flex-direction: column;
+        height: auto;
+    }
+    .feature-1 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header nav h1 {
+        font-size: 1.5em;
+    }
+    .header nav ul li {
+        padding: 10px;
+    }
+    .content-vp h2 {
+        font-size: 20px;
+    }
+    .content-vp p {
+        font-size: 12px;
+    }
+    .titre {
+        padding-left: 30px;
+        font-size: 18px;
+    }
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .content-vp h2 {
+        font-size: 25px;
+    }
+    .content-vp p {
+        font-size: 14px;
+    }
+    #container, .container1 {
+        flex-direction: column;
+        height: auto;
+    }
+    .feature-1 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .titre {
+        padding-left: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header nav h1 {
+        font-size: 1.5em;
+    }
+    .header nav ul li {
+        padding: 10px;
+    }
+    .content-vp h2 {
+        font-size: 20px;
+    }
+    .content-vp p {
+        font-size: 12px;
+    }
+    .titre {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header nav h1 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    .header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header nav ul li {
+        padding: 5px;
+    }
+    .content-vp h2 {
+        font-size: 18px;
+    }
+    .content-vp p {
+        font-size: 10px;
+    }
+    .titre {
+        padding-left: 30px;
+        font-size: 16px;
+    }
+    .feature-1 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header nav h1 {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header nav ul li {
+        padding: 5px;
+    }
+    .content-vp h2 {
+        font-size: 16px;
+    }
+    .content-vp p {
+        font-size: 8px;
+    }
+    .titre {
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    .feature-1 {
+        width: 100%;
+    }
+}

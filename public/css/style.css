@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #e6dddd;
+}
+body nav{
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    font-weight: 1.7em;
+    overflow: auto;
+}
+.header nav h1{
+    float: left;
+    padding: 20px;
+    margin-bottom: 0px;
+    
+    font-family: indie flower;
+}
+.header nav ul{
+    float: right;
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: rgb(249, 249, 252);
+}
+.header nav ul li{
+   display: inline;
+   float: left;
+   padding: 20px;
+}
+.header nav ul li a:hover{
+    padding: 15px;
+    background:#7e8dce;
+
+}
+.content{
+    width: 100%;
+    height: 500px;
+    background-image: url(../Images/imagefont.jpg);
+    margin-top: 0px;
+    text-align: center;
+    
+}
+.content-vp{
+    margin:auto;
+    max-width: 600px;
+    padding-top: 150px;
+    color: rgb(255, 255, 255);
+}
+.content-vp h2{
+    font-size: 30px;
+}
+.content-vp p{
+    font-size: 15px;
+    line-height: 1.7em;
+    font-family: Nanum Myeongjo;
+}
+.fa-crown{
+    color: orange;
+}
+#container{
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 20px;
+    padding: 0px 50px;
+    align-items: center;
+    margin-bottom:5px;
+
+}
+#container img{
+    width: 100%;
+    height: 260px;
+    float: left;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.titre{
+    padding-left:70px;
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin-top: 4vw;
+}
+.feature-1{
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(250, 246, 246);
+}
+/* section equipe */
+.notre-equipe{
+    width: 100%;
+    display: flex;
+    gap: 0;
+    float: left;
+    background-color: rgba(51, 51, 51);
+    margin-bottom: 20px;
+}
+.image_equipe{
+    width: 100%;
+}
+.notre-equipe img{
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+}
+.equipe-text {
+    margin: auto 32px;
+    text-align: justify;
+    line-height: 23px;
+    color: white;
+    width: 90%;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+.notre-equipe h2 {
+    padding-bottom: 2%;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+/* Styles pour la section de commentaires */
+#commentsSection {
+    margin-bottom: 10px;
+    width: 80%;
+    padding-left: 20%;
+    position: absolute;
+}
+
+.espas-komant{
+    display: flex;
+
+}
+.espas-kom{
+    display: flex;
+    padding: 20px;
+    background-color: #afb9af;
+    margin-bottom: 20px;
+}
+.espas-komant{
+    display: flex;
+    padding: 20px;
+    width: 10%;
+}
+.espas-komant .imaj{
+    display: block;
+    border-radius: 70%;
+}
+
+.avis_util{
+    width: 70%;
+    display: flex;
+    padding: 0px 20px;
+
+}
+.avis_util .mesaj{
+    text-align: center;
+    font-family: Nanum Myeogjo;
+    font-size: 15px;
+    padding-left: 20px;
+    justify-content: center;
+}
+.section-comment {
+    background-color: #e2c6c6;
+    padding: 20px;
+    margin:30px  10px 10px 20px;
+    height:70vh;
+    width: 30%;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.section-comment h1 {
+    font-family: 'Indie Flower';
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#commentsSection .comment {
+    background-color: #fff;
+    padding: 10px 0px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* margin-bottom: 10px; */
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#commentForm label {
+    margin-bottom: 5px;
+}
+
+#commentForm input,
+#commentForm textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#commentForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5df162;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#commentForm button:hover {
+    background-color: #98d19b;
+}
+
+footer{
+    text-align: center;
+    background: #333;
+    height: 60px;
+    width: 100%;
+    padding: 20px 0px;
+    font-family: "Nanum Myeongjo";
+}
+footer p{
+    margin-bottom: 5px;
+    color: #fff;
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header nav h1 {
+        font-size: 1.5em;
+    }
+
+    .header nav ul li {
+        padding: 15px;
+    }
+
+    .content-vp h2 {
+        font-size: 24px;
+    }
+
+    .content-vp p {
+        font-size: 14px;
+    }
+
+    .feature-1 {
+        width: 45%;
+    }
+
+    .section-comment {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header nav h1 {
+        font-size: 1.2em;
+    }
+
+    .header nav ul li {
+        padding: 10px;
+    }
+
+    .content-vp h2 {
+        font-size: 20px;
+    }
+
+    .content-vp p {
+        font-size: 12px;
+    }
+
+    #container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .feature-1 {
+        width: 90%;
+    }
+
+    .section-comment {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header nav h1 {
+        font-size: 1em;
+    }
+
+    .header nav ul li {
+        padding: 8px;
+    }
+
+    .content-vp h2 {
+        font-size: 18px;
+    }
+
+    .content-vp p {
+        font-size: 10px;
+    }
+
+    .section-comment h1 {
+        font-size: 16px;
+    }
+}
+/* Extra Large Devices (Large desktops, TVs) */
+@media (max-width: 1440px) {
+    .header nav h1 {
+        font-size: 1.8em;
+    }
+
+    .header nav ul li {
+        padding: 18px;
+    }
+
+    .content-vp h2 {
+        font-size: 28px;
+    }
+
+    .content-vp p {
+        font-size: 14px;
+    }
+
+    .feature-1 {
+        width: 30%;
+    }
+
+    .section-comment {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+/* Large Devices (Desktops, laptops) */
+@media (max-width: 1200px) {
+    .header nav h1 {
+        font-size: 1.5em;
+    }
+
+    .header nav ul li {
+        padding: 15px;
+    }
+
+    .content-vp h2 {
+        font-size: 24px;
+    }
+
+    .content-vp p {
+        font-size: 14px;
+    }
+
+    .feature-1 {
+        width: 45%;
+    }
+
+    .section-comment {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+/* Medium Devices (Tablets in landscape mode, small laptops) */
+@media (max-width: 992px) {
+    .header nav h1 {
+        font-size: 1.3em;
+    }
+
+    .header nav ul li {
+        padding: 12px;
+    }
+
+    .content-vp h2 {
+        font-size: 22px;
+    }
+
+    .content-vp p {
+        font-size: 13px;
+    }
+
+    .feature-1 {
+        width: 60%;
+    }
+
+    .section-comment {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* Small Devices (Tablets in portrait mode, large smartphones) */
+@media (max-width: 768px) {
+    .header nav h1 {
+        font-size: 1.2em;
+    }
+
+    .header nav ul li {
+        padding: 10px;
+    }
+    .notre-equipe {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .image_equipe, .equipe-text {
+        flex: none; /* Remove flex property */
+        width: 100%; /* Each takes up full width */
+    }
+
+    .image_equipe img {
+        height: auto;
+    }
+
+    .equipe-text {
+        padding: 10px;
+    }
+    .content-vp h2 {
+        font-size: 20px;
+    }
+
+    .content-vp p {
+        font-size: 12px;
+    }
+
+    #container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .feature-1 {
+        width: 90%;
+    }
+
+    .section-comment {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/* Extra Small Devices (Small smartphones) */
+@media (max-width: 480px) {
+    .header nav h1 {
+        font-size: 1em;
+    }
+
+    .header nav ul li {
+        padding: 8px;
+    }
+
+    .content-vp h2 {
+        font-size: 18px;
+    }
+
+    .content-vp p {
+        font-size: 10px;
+    }
+
+    .section-comment h1 {
+        font-size: 16px;
+    }
+}
